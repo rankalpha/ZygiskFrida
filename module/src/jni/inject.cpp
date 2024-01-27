@@ -107,6 +107,7 @@ bool check_and_inject(std::string const &app_name) {
 
     std::optional<target_config> cfg = load_config(module_dir, app_name);
     if (!cfg.has_value()) {
+        LOGI("App skipped: %s", app_name.c_str());
         return false;
     }
 
