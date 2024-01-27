@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - log_skipped_apps
   pull_request:
     branches:
       - main
