@@ -108,7 +108,7 @@ static void inject_libs(target_config const &cfg) {
 }
 
 bool check_and_inject(std::string const &app_name) {
-    std::string module_dir = std::string("/data/local/tmp/re.zyg.fri");
+    std::string module_dir = std::string("/data/local/tmp/frisk");
 
     std::optional<target_config> cfg = load_config(module_dir, app_name);
     if (!cfg.has_value()) {
